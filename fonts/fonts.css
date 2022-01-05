@@ -1,0 +1,6 @@
+@font-face {
+  font-family: "parklyCondensed";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("parklyCondensed.woff2") format("woff2");
+}
