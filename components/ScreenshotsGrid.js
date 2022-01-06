@@ -15,7 +15,7 @@ const ScreenshotsGrid = (props) => {
         return (
           <>
             <div
-              className={`p-1 transform rounded-sm bg-slate-100 max-w-fit hover:scale-110 transition ease-in-out duration-300 ${rotate[random]}`}
+              className={`p-1 z-50 transform rounded-sm bg-slate-100 max-w-fit hover:scale-110 transition ease-in-out duration-300 ${rotate[random]}`}
             >
               <Image
                 src={image.image.url}
