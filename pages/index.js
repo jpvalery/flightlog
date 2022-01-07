@@ -2,7 +2,6 @@ import { NextSeo } from "next-seo";
 import client from "../lib/sanity";
 
 import ScreenshotsGrid from "../components/ScreenshotsGrid";
-import Footer from "../components/Footer";
 
 export default function Home({ screensData }) {
   return (
@@ -22,26 +21,8 @@ export default function Home({ screensData }) {
           ],
         }}
       />
-      <main>
-        <div className="grid grid-flow-row gap-4 pb-8 md:hidden">
-          <div className="flex items-center space-x-4">
-            <h1 className="text-6xl font-bold text-zinc-50 font-parklyCondensed">
-              FlightLog
-            </h1>
-            <p className="text-4xl font-bold text-map-800 font-parklyCondensed">
-              CF992
-            </p>
-          </div>
-          <p className="text-zinc-100 ">
-            A collection of screenshots of flights I've taken over the years on
-            Microsoft Flight Simulator.
-          </p>
-        </div>
-        <ScreenshotsGrid images={screensData} />
-        <div className="inline-flex pt-8 md:hidden text-zinc-50">
-          <Footer />
-        </div>
-      </main>
+
+      <ScreenshotsGrid images={screensData} />
     </>
   );
 }
