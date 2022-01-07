@@ -1,18 +1,24 @@
 import NextLink from "next/link";
+import MenuIcons from "./MenuIcons";
 
 export default function HeaderMobile() {
   return (
     <div className="grid grid-flow-row gap-4 lg:hidden">
-      <NextLink href="/">
-        <div className="flex items-center space-x-2 hover:cursor-pointer">
-          <h1 className="text-6xl font-bold text-zinc-50 font-parklyCondensed">
-            FlightLog
-          </h1>
-          <p className="text-4xl font-bold text-map-600 font-parklyCondensed">
-            CF992
-          </p>
+      <div className="flex items-center space-x-2 hover:cursor-pointer">
+        <NextLink href="/">
+          <>
+            <h1 className="text-6xl font-bold text-zinc-50 font-parklyCondensed">
+              FlightLog
+            </h1>
+            <p className="text-4xl font-bold text-map-600 font-parklyCondensed">
+              CF992
+            </p>
+          </>
+        </NextLink>
+        <div className="pl-8 text-zinc-50">
+        <MenuIcons />
         </div>
-      </NextLink>
+      </div>
       <p className="text-zinc-100">
         A collection of screenshots of flights I've taken over the years on
         Microsoft Flight Simulator.

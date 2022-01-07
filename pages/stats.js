@@ -62,7 +62,7 @@ export default function Stats({ statsData, lastUpdateData }) {
                   ));
 
             return (
-              <div className="grid items-center justify-between grid-flow-row py-3 pl-6 pr-4 sm:grid-flow-col space-x-18 md:space-x-36 odd:bg-zinc-900">
+              <div className="grid items-center justify-between grid-flow-row py-3 pl-6 pr-4 sm:grid-flow-col space-x-18 md:space-x-36 even:bg-zinc-900/50 odd:bg-zinc-900">
                 <dt className="text-lg md:text-xl text-zinc-100">
                   {i.name} {unitSpan}
                 </dt>
