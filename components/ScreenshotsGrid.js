@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const ScreenshotsGrid = (props) => {
   return (
@@ -13,9 +14,9 @@ const ScreenshotsGrid = (props) => {
         ];
         const random = Math.floor(Math.random() * rotate.length);
         return (
-          <>
+          <Link href={`/photo/${image._id}`}>
             <div
-              className={`p-1 z-50 transform rounded-sm bg-slate-100 max-w-fit hover:scale-110 transition ease-in-out duration-300 ${rotate[random]}`}
+              className={`p-1 z-50 transform rounded-sm bg-slate-100 max-w-fit hover:scale-110 transition ease-in-out duration-300 hover:cursor-pointer ${rotate[random]}`}
             >
               <Image
                 src={image.image.url}
@@ -28,7 +29,7 @@ const ScreenshotsGrid = (props) => {
                 blurDataURL={image.image.metadata.lqip}
               />
             </div>
-          </>
+          </Link>
         );
       })}
     </div>

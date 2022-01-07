@@ -2,6 +2,7 @@ import { NextSeo } from "next-seo";
 import client from "../lib/sanity";
 
 import ScreenshotsGrid from "../components/ScreenshotsGrid";
+import Footer from "../components/Footer";
 
 export default function Home({ screensData }) {
   return (
@@ -22,7 +23,7 @@ export default function Home({ screensData }) {
         }}
       />
       <main>
-        <div className="grid grid-flow-row gap-4 pb-4 md:hidden">
+        <div className="grid grid-flow-row gap-4 pb-8 md:hidden">
           <div className="flex items-center space-x-4">
             <h1 className="text-6xl font-bold text-zinc-50 font-parklyCondensed">
               FlightLog
@@ -37,6 +38,9 @@ export default function Home({ screensData }) {
           </p>
         </div>
         <ScreenshotsGrid images={screensData} />
+        <div className="inline-flex pt-8 md:hidden text-zinc-50">
+          <Footer />
+        </div>
       </main>
     </>
   );
@@ -49,6 +53,7 @@ export async function getStaticProps() {
   // We define our query here
   const screensQuery = `
 *[ _type == "screenshot"]{
+  _id,
   _createdAt,
       image {
   alt,
