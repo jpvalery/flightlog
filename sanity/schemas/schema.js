@@ -48,5 +48,41 @@ export default createSchema({
         },
       ],
     },
+    {
+      // This is the display name for the type
+      title: "Stat",
+
+      // The identifier for this document type used in the api's
+      name: "stat",
+
+      // Documents have the type 'document'. Your schema may describe types beyond documents
+      // but let's get back to that later.
+      type: "document",
+
+      // Now we proceed to list the fields of our document
+      fields: [
+        // This document has only one field
+        {
+          title: "Name",
+          name: "name",
+          type: "string",
+        },
+        {
+          title: "Amount",
+          name: "amount",
+          type: "number",
+        },
+        {
+          title: "Unit",
+          name: "unit",
+          type: "string",
+        },
+  {
+          title: "Sorting order",
+          name: "sortOrder",
+          type: "number",
+        },
+      ],
+    },
   ]),
 });

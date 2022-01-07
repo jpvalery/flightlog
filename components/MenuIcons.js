@@ -7,7 +7,7 @@ export default function MenuIcons() {
       <NextLink href="/">
         <HomeIcon className="w-6 h-6 hover:cursor-pointer hover:text-zinc-500" />
       </NextLink>
-      <NextLink href="/">
+      <NextLink href="/stats">
         <UserCircleIcon className="w-6 h-6 hover:cursor-pointer hover:text-zinc-500" />
       </NextLink>
     </div>

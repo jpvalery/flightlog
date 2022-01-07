@@ -667,10 +667,10 @@ colorette@^1.2.2:
   resolved "https://registry.yarnpkg.com/colorette/-/colorette-1.2.2.tgz#cbcc79d5e99caea2dbf10eb3a26fd8b3e6acfa94"
   integrity sha512-MKGMzyfeuutC/ZJ1cba9NqcNpfeqMUcYmyF1ZFY6/Cn7CNSAKx6a+s48sqLqyAiZuaP2TcqMhoo+dlwFnVxT9w==
 
-comma-number@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/comma-number/-/comma-number-2.0.1.tgz#d01de3f207f00ccd593dcbcf17ac633bbb942b62"
-  integrity sha512-hrxY6UjA+tSUV5uZS2iOF8+/q7AACiq/zc9R6SO61MmOhrzNC0qXXh7g/jNYTm09fp6T40vQg15zkCmTJVA8Ww==
+comma-number@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/comma-number/-/comma-number-2.1.0.tgz#0f38eef7293fe5ba4a0de6d1ffd3ea70a5e3e288"
+  integrity sha512-fRcu1c+4yFLFp3tgranEkKPPWRlnkWQXr4p0KBL0WW9Kd2wmbKAoQ2R4rluFm4ubXCtXGybEaFB7r6YgPOnahQ==
 
 commondir@^1.0.1:
   version "1.0.1"
