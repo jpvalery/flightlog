@@ -8,14 +8,14 @@ export default function FooterMobile() {
         <div className="flex justify-start space-x-4">
           <a
             href="https://twitter.com/jpvalery"
-            className="w-6 h-6 hover:text-zinc-100"
+            className="h-6 w-6 hover:text-zinc-100"
           >
             <span className="sr-only">Twitter</span>
             <Twitter />
           </a>
           <a
             href="https://account.xbox.com/en-ca/profile?gamertag=jpvalery"
-            className="w-6 h-6 hover:text-zinc-100"
+            className="h-6 w-6 hover:text-zinc-100"
           >
             <span className="sr-only">Xbox</span>
             <Xbox />

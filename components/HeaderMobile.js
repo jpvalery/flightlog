@@ -7,16 +7,16 @@ export default function HeaderMobile() {
       <div className="flex items-center space-x-2 hover:cursor-pointer">
         <NextLink href="/">
           <>
-            <h1 className="text-6xl font-bold text-zinc-50 font-parklyCondensed">
+            <h1 className="font-parklyCondensed text-6xl font-bold text-zinc-50">
               FlightLog
             </h1>
-            <p className="text-4xl font-bold text-map-600 font-parklyCondensed">
+            <p className="font-parklyCondensed text-4xl font-bold text-map-600">
               CF992
             </p>
           </>
         </NextLink>
         <div className="pl-8 text-zinc-50">
-        <MenuIcons />
+          <MenuIcons />
         </div>
       </div>
       <p className="text-zinc-100">

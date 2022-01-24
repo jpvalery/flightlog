@@ -20,8 +20,8 @@ function MyApp({ Component, pageProps }) {
         <meta content="width=device-width, initial-scale=1" name="viewport" />
       </Head>
       <DefaultSeo {...SEO} />
-      <div className="flex w-full h-full min-h-screen">
-        <div className="hidden sticky top-0 z-40 lg:flex flex-col justify-between h-screen p-8 w-min justify-items-stretch bg-zinc-200 drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)]">
+      <div className="flex h-full min-h-screen w-full">
+        <div className="sticky top-0 z-40 hidden h-screen w-min flex-col justify-between justify-items-stretch bg-zinc-200 p-8 drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] lg:flex">
           <Header />
           <Footer />
         </div>

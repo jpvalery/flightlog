@@ -22,8 +22,8 @@ export default function Photo({ photoData }) {
         }}
       />
 
-      <div className="flex flex-col items-center gap-4 mx-auto">
-        <div className="z-50 p-1 transform rounded-sm bg-slate-100 max-w-fit">
+      <div className="mx-auto flex flex-col items-center gap-4">
+        <div className="z-50 max-w-fit transform rounded-sm bg-slate-100 p-1">
           <Image
             src={photoData[0].image.url}
             alt={`${photoData[0].image.alt} | Microsoft Flight Simulator`}
@@ -36,10 +36,10 @@ export default function Photo({ photoData }) {
           />
         </div>
         <p className="text-xl text-zinc-100">{photoData[0].image.caption}</p>
-        <p className="text-zinc-400 hover:text-zinc-100 hover:cursor-pointer">
+        <p className="text-zinc-400 hover:cursor-pointer hover:text-zinc-100">
           <NextLink href="/">
             <div className="flex items-center gap-2">
-              <ArrowCircleLeftIcon className="w-4 h-4" />
+              <ArrowCircleLeftIcon className="h-4 w-4" />
               <p>Return</p>
             </div>
           </NextLink>

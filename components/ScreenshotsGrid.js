@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const ScreenshotsGrid = (props) => {
   return (
-    <div className="grid grid-flow-row grid-cols-1 gap-8 md:gap-16 md:grid-cols-2 auto-cols-auto justify-items-center">
+    <div className="grid auto-cols-auto grid-flow-row grid-cols-1 justify-items-center gap-8 md:grid-cols-2 md:gap-16">
       {props.images.map((image) => {
         const rotate = [
           "-rotate-[2deg]",
@@ -16,7 +16,7 @@ const ScreenshotsGrid = (props) => {
         return (
           <Link href={`/photo/${image._id}`}>
             <div
-              className={`p-1 z-50 transform rounded-sm bg-slate-100 max-w-fit hover:scale-110 transition ease-in-out duration-300 hover:cursor-pointer ${rotate[random]}`}
+              className={`z-50 max-w-fit transform rounded-sm bg-slate-100 p-1 transition duration-300 ease-in-out hover:scale-110 hover:cursor-pointer ${rotate[random]}`}
             >
               <Image
                 src={image.image.url}

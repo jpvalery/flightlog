@@ -6,10 +6,10 @@ export default function Header() {
     <div className="grid grid-flow-row gap-12">
       <NextLink href="/">
         <div className="hover:cursor-pointer">
-          <h1 className="text-6xl font-bold font-parklyCondensed text-zinc-900">
+          <h1 className="font-parklyCondensed text-6xl font-bold text-zinc-900">
             FlightLog
           </h1>
-          <p className="text-4xl font-bold text-map-800 font-parklyCondensed">
+          <p className="font-parklyCondensed text-4xl font-bold text-map-800">
             CF992
           </p>
         </div>
