@@ -1,7 +1,7 @@
-import { NextSeo } from "next-seo";
-import NextLink from "next/link";
-import Image from "next/image";
 import { ArrowCircleLeftIcon } from "@heroicons/react/outline";
+import { NextSeo } from "next-seo";
+import Image from "next/image";
+import NextLink from "next/link";
 
 import client from "../../lib/sanity";
 

@@ -1,17 +1,16 @@
 import "tailwindcss/tailwind.css";
 import "../fonts/fonts.css";
 
-import React, { useEffect } from "react";
 import Head from "next/head";
 
 import { DefaultSeo } from "next-seo";
 
 import SEO from "../next-seo-config";
 
-import Header from "../components/Header";
 import Footer from "../components/Footer";
-import HeaderMobile from "../components/HeaderMobile";
 import FooterMobile from "../components/FooterMobile";
+import Header from "../components/Header";
+import HeaderMobile from "../components/HeaderMobile";
 
 function MyApp({ Component, pageProps }) {
   return (
