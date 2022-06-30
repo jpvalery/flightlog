@@ -1,5 +1,5 @@
-import NextLink from "next/link";
 import { HomeIcon, UserCircleIcon } from "@heroicons/react/outline";
+import NextLink from "next/link";
 
 export default function MenuIcons() {
   return (

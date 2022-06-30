@@ -1,5 +1,5 @@
-import { NextSeo } from "next-seo";
 import format from "comma-number";
+import { NextSeo } from "next-seo";
 
 import client from "../lib/sanity";
 
