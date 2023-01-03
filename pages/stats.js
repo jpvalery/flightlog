@@ -90,8 +90,8 @@ name,
 
   const lastUpdateQuery = `
 *[_type == "stat"]{
-  _createdAt
-} | order(_createdAt desc)[0]
+    _updatedAt
+} | order(_createdAt asc)[0]
   `;
 
   const statsData = await client.fetch(statsQuery);
