@@ -28,7 +28,7 @@ export default function Stats({ statsData, lastUpdateData }) {
             Jp's personal stats
           </h1>
           <p className="text-sm uppercase text-zinc-400">
-            Last updated: {lastUpdateData._createdAt}
+            Last updated: {lastUpdateData._updatedAt}
           </p>
         </div>
         <dl className="shadow-lg">
