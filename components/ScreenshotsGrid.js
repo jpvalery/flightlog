@@ -14,7 +14,7 @@ const ScreenshotsGrid = (props) => {
         ];
         const random = Math.floor(Math.random() * rotate.length);
         return (
-          <Link href={`/photo/${image._id}`}>
+          <Link href={`/photo/${image._id}`} legacyBehavior key={image._id}>
             <div
               className={`z-50 max-w-fit transform rounded-sm bg-slate-100 p-1 transition duration-300 ease-in-out hover:scale-110 hover:cursor-pointer ${rotate[random]}`}
             >
@@ -23,10 +23,13 @@ const ScreenshotsGrid = (props) => {
                 alt={`${image.image.alt} | Microsoft Flight Simulator`}
                 width="800"
                 height="450"
-                layout="intrinsic"
                 className="z-50"
                 placeholder="blur"
                 blurDataURL={image.image.metadata.lqip}
+                style={{
+                  maxWidth: "100%",
+                  height: "auto",
+                }}
               />
             </div>
           </Link>

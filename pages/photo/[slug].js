@@ -21,7 +21,6 @@ export default function Photo({ photoData }) {
           ],
         }}
       />
-
       <div className="mx-auto flex flex-col items-center gap-4">
         <div className="z-50 max-w-fit transform rounded-sm bg-slate-100 p-1">
           <Image
@@ -29,15 +28,18 @@ export default function Photo({ photoData }) {
             alt={`${photoData[0].image.alt} | Microsoft Flight Simulator`}
             width="1200"
             height="675"
-            layout="intrinsic"
             className="z-50"
             placeholder="blur"
             blurDataURL={photoData[0].image.metadata.lqip}
+            style={{
+              maxWidth: "100%",
+              height: "auto",
+            }}
           />
         </div>
         <p className="text-xl text-zinc-100">{photoData[0].image.caption}</p>
         <p className="text-zinc-400 hover:cursor-pointer hover:text-zinc-100">
-          <NextLink href="/">
+          <NextLink href="/" legacyBehavior>
             <div className="flex items-center gap-2">
               <ArrowCircleLeftIcon className="h-4 w-4" />
               <p>Return</p>

@@ -4,7 +4,7 @@ import MenuIcons from "./MenuIcons";
 export default function Header() {
   return (
     <div className="grid grid-flow-row gap-12">
-      <NextLink href="/">
+      <NextLink href="/" legacyBehavior>
         <div className="hover:cursor-pointer">
           <h1 className="font-parklyCondensed text-6xl font-bold text-zinc-900">
             FlightLog

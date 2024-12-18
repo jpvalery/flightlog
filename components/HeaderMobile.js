@@ -5,7 +5,7 @@ export default function HeaderMobile() {
   return (
     <div className="grid grid-flow-row gap-4 lg:hidden">
       <div className="flex items-center space-x-2 hover:cursor-pointer">
-        <NextLink href="/">
+        <NextLink href="/" legacyBehavior>
           <>
             <h1 className="font-parklyCondensed text-6xl font-bold text-zinc-50">
               FlightLog
