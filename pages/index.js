@@ -15,8 +15,7 @@ export default function Home({ screensData }) {
             "A collection of screenshots of flights I've taken over the years on Microsoft Flight Simulator.",
           images: [
             {
-              url:
-                "https://og.jpvalery.me/FlightLog.png?theme=flightlog&md=1&fontSize=200px&heights=300",
+              url: "https://og.jpvalery.me/api/og/flightlog/MSFS%20Flightlog",
             },
           ],
         }}
