@@ -15,8 +15,7 @@ const SEO = {
     description: description,
     images: [
       {
-        url:
-          "https://og.jpvalery.me/api/og/flightlog/MSFS%20Flightlog",
+        url: "https://og.jpvalery.me/api/og/flightlog/MSFS%20Flightlog",
         width: 1531,
         height: 875,
         alt: "Open Graph Image",

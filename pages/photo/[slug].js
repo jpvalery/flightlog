@@ -22,14 +22,14 @@ export default function Photo({ photoData }) {
         }}
       />
       <div className="mx-auto flex flex-col items-center gap-4">
-        <div className="z-50 max-w-fit transform rounded-sm bg-slate-100 p-1">
+        <div className="z-50 max-w-fit transform rounded-xs bg-slate-100 p-1">
           <Image
             src={photoData[0].image.url}
             alt={`${photoData[0].image.alt} | Microsoft Flight Simulator`}
             width="1200"
             height="675"
             className="z-50"
-            placeholder="blur"
+            placeholder="blur-sm"
             blurDataURL={photoData[0].image.metadata.lqip}
             style={{
               maxWidth: "100%",

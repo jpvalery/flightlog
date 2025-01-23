@@ -1,0 +1,38 @@
+@import 'tailwindcss';
+
+@plugin '@tailwindcss/typography';
+
+@theme {
+  --font-*: initial;
+  --font-parkly-condensed: parklyCondensed, ui-sans-serif, system-ui;
+
+  --color-map-50: #fff1f2;
+  --color-map-100: #ffe4e6;
+  --color-map-200: #fecdd3;
+  --color-map-300: #fda4af;
+  --color-map-400: #fb7185;
+  --color-map-500: #f43f5e;
+  --color-map-600: #e11d48;
+  --color-map-700: #be123c;
+  --color-map-800: #9f1239;
+  --color-map-900: #881337;
+  --color-map-950: #4c0519;
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}

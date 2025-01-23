@@ -15,7 +15,8 @@ export default function Stats({ statsData, lastUpdateData }) {
             "My stats from Microsoft Flight Simulator — Manually updated once in a while",
           images: [
             {
-              url: "https://og.jpvalery.me/api/og/flightlog/MSFS%20Flight%20Stats",
+              url:
+                "https://og.jpvalery.me/api/og/flightlog/MSFS%20Flight%20Stats",
             },
           ],
         }}

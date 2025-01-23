@@ -16,7 +16,7 @@ const ScreenshotsGrid = (props) => {
         return (
           <Link href={`/photo/${image._id}`} legacyBehavior key={image._id}>
             <div
-              className={`z-50 max-w-fit transform rounded-sm bg-slate-100 p-1 transition duration-300 ease-in-out hover:scale-110 hover:cursor-pointer ${rotate[random]}`}
+              className={`z-50 max-w-fit transform rounded-xs bg-slate-100 p-1 transition duration-300 ease-in-out hover:scale-110 hover:cursor-pointer ${rotate[random]}`}
             >
               <Image
                 src={image.image.url}
